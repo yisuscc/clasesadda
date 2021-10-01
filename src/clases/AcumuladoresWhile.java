@@ -67,8 +67,26 @@ System.out.println(lista1.stream().map(string-> string.toString()).collect(Colle
 		return lista1.stream().map(string-> string.toString()).collect(Collectors.joining(",", "[", " ]"));
 	}
 	public String joiningWhile(List<Integer> lista1) {
-		//TODO
-		return null;
+		Integer e = 0 ;
+		String s = "";
+		while(e<lista1.size()) {
+			if(e == 0) {
+				s.concat("[");
+				s.concat(String.valueOf(lista1.get(e)));
+				s.concat(",");
+			}
+			if (e == lista1.size()-1) {
+				s.concat(s);
+				s.concat("]");
+			}
+			else {
+				s.concat(String.valueOf(lista1.get(e)));
+				s.concat(",");
+			}
+			e++;
+		}
+		return s;
 	}
+	
 
 }
