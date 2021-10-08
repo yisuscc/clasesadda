@@ -43,6 +43,7 @@ public class Ejercicios {
 	static Boolean esPrimoWhile(Long n) {
 		Long sqrt = (long)Math.sqrt((double)n);
 		// TODO completar 
+		return null;
 	}
 	static  boolean esPrimonFn1(Long n) {
 		Long e = 2L;
